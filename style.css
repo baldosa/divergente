@@ -442,7 +442,18 @@ nav .lang-toggle:hover {
   overflow: hidden;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  /* center image vertically */
+  justify-content: center;
+  /* center horizontally if necessary */
+}
+
+/* ensure the founder photo scales to fill its container */
+.founder-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .founder-image-placeholder {
